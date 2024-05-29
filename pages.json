@@ -1,0 +1,146 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path": "pages/find/index",
+			"style": {
+				"navigationBarTitleText": "发现",
+				"enablePullDownRefresh": false
+			}
+		},
+		// {
+		// 	"path": "pages/doctor/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "医生列表",
+		// 		"enablePullDownRefresh": false
+		// 	}
+		// },
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/doctor/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : "医生列表",
+				"enablePullDownRefresh" : false
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "pages-mine",
+			"pages": [{
+					"path": "personal-center/personal-center",
+					"style": {
+						"navigationBarTitleText": "个人中心",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "set/set",
+					"style": {
+						"navigationBarTitleText": "设置",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		},
+		{
+			"root": "pages-basic",
+			"pages": [{
+					"path": "xinxin/xinxin",
+					"style": {
+						"navigationBarTitleText": "心心",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "details/details",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "findDetails/findDetails",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path" : "messagewriten/messagewriten",
+					"style" : 
+					{
+						"navigationBarTitleText" : "信息填写",
+						"enablePullDownRefresh" : false
+					}
+				}
+			]
+		}
+	],
+	"preloadRule": {
+		"pages/my/index": {
+			"network": "all",
+			"packages": ["pages-mine", "pages-basic"]
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3c9cff",
+		"list": [{
+				// "text": "首页",
+				"pagePath": "pages/index/index"
+				// "iconPath": "static/tabbarIcon/cart.png",
+				// "selectedIconPath": "static/tabbarIcon/indexA.png"
+			},
+			// {
+			// 	// "text": "发现",
+			// 	"pagePath": "pages/doctor/index"
+			// 	// "iconPath": "static/tabbarIcon/cart.png",
+			// 	// "selectedIconPath": "static/tabbarIcon/cartA.png"
+			// },
+			{
+				// "text": "发现",
+				"pagePath": "pages/find/index"
+				// "iconPath": "static/tabbarIcon/cart.png",
+				// "selectedIconPath": "static/tabbarIcon/cartA.png"
+			},
+			{
+				// "text": "我的",
+				"pagePath": "pages/my/index"
+				// "iconPath": "static/tabbarIcon/my.png",
+				// "selectedIconPath": "static/tabbarIcon/myA.png"
+			}
+		]
+	},
+
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#FFFFFF"
+	},
+	"uniIdRouter": {}
+}

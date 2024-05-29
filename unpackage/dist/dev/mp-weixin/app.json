@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/find/index",
+    "pages/my/index",
+    "pages/login/login",
+    "pages/doctor/index"
+  ],
+  "subPackages": [
+    {
+      "root": "pages-mine",
+      "pages": [
+        "personal-center/personal-center",
+        "set/set"
+      ]
+    },
+    {
+      "root": "pages-basic",
+      "pages": [
+        "xinxin/xinxin",
+        "details/details",
+        "findDetails/findDetails",
+        "messagewriten/messagewriten"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3c9cff",
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/find/index"
+      },
+      {
+        "pagePath": "pages/my/index"
+      }
+    ]
+  },
+  "preloadRule": {
+    "pages/my/index": {
+      "network": "all",
+      "packages": [
+        "pages-mine",
+        "pages-basic"
+      ]
+    }
+  },
+  "usingComponents": {
+    "tab-bar": "/components/tabbar/tabbar",
+    "search": "/components/search/search",
+    "buttonbox": "/components/buttonbox/buttonbox"
+  }
+}

@@ -1,0 +1,1 @@
+<view><view class="banner"><view class="banner-title">{{banner.doctor_title}}</view><image class="banner-image" src="{{banner.doctor_imgurl}}"></image></view><view><text class="banner-content">{{banner.doctor_specialty}}</text></view></view>

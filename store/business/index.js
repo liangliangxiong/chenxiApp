@@ -1,0 +1,54 @@
+import {getShopData,getShopInfoData} from "../../api/business";
+export default {
+    namespaced: true,
+    state:{
+        shops:[],
+        shopInfo:{}//商家信息
+    },
+    mutations:{
+        //设置商铺列表
+        ["SET_SHOPS"](state,payload){
+            state.shops=payload.shops;
+        },
+        //设置商铺分页数据
+        ["SET_SHOPS_PAGE"](state,payload){
+            state.shops.push(...payload.shops)
+        },
+        //设置商家信息
+        ["SET_SHOP_INFO"](state,payload){
+            state.shopInfo=payload.shopInfo;
+        }
+    },
+    actions:{
+        //显示首页商家列表
+        getShop(conText,payload){
+            getShopData(payload).then(res=>{
+                if(res.code==200){
+                    conText.commit("SET_SHOPS",{shops:res.data});
+                    if(payload.success){
+                        payload.success(res.pageinfo.pagenum)
+                    }
+                }
+                if(payload.complete){
+                    payload.complete()
+                }
+            })
+        },
+        //显示首页分页商家数据
+        getShopPage(conText,payload){
+            getShopData(payload).then(res=>{
+                if(res.code==200){
+                    conText.commit("SET_SHOPS_PAGE",{shops:res.data});
+                }
+            })
+        },
+        //显示商家信息
+        getShopInfo(conText,payload){
+            getShopInfoData(payload).then(res=>{
+                if(res.code==200){
+                    conText.commit("SET_SHOP_INFO",{shopInfo:res.data});
+                }
+            })
+        }
+    }
+}

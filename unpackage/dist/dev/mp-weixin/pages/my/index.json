@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我的",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell": "/uview-ui/components/u-cell/u-cell",
+    "user-info": "/pages/my/components/UserInfo",
+    "grid": "/pages/my/components/Grid"
+  }
+}
