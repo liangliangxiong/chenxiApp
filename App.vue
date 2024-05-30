@@ -1,7 +1,7 @@
 <script>
 	export default {
 		onLaunch: function() {
-			uni.hideTabBar(); 
+			// uni.hideTabBar(); 
 			// 看手机是不是iPhoneX
 			uni.getSystemInfo({
 				success: res => {
@@ -15,7 +15,7 @@
 			console.log('App Launch')
 		},
 		onShow: function() {
-			uni.hideTabBar();
+			// uni.hideTabBar();
 			console.log('App Show')
 		},
 		onHide: function() {

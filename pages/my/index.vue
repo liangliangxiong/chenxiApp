@@ -10,7 +10,7 @@
 			<u-cell icon="info-circle-fill" title="关于我们" isLink></u-cell>
 			<u-cell icon="setting-fill" title="设置" isLink url="/pages-mine/set/set"></u-cell>
 		</u-cell-group>
-		<tab-bar></tab-bar>
+		<!-- <tab-bar></tab-bar> -->
 	</view>
 </template>
 

@@ -31,10 +31,8 @@
 
 		<!-- 底部导航栏 -->
 		<view class="tab-bar">
-			<tab-bar></tab-bar>
+			<!-- <tab-bar></tab-bar> -->
 		</view>
-
-		<buttonbox></buttonbox>
 	</view>
 </template>
 

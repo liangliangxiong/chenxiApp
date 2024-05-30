@@ -15,12 +15,3 @@ export function GetAllSwipers(data){
 export function GetDoctors(data){
     return request(config.baseApi+"/doctors","get",data)
 }
-
-
-
-
-
-// 查找单个swiper的内容
-// export function GetSwiperbyID(data){
-//     return request(config.baseApi+"/GetSwiperbyID","get",data)
-// }

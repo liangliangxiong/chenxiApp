@@ -1557,7 +1557,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -8934,7 +8934,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8955,14 +8955,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9058,7 +9058,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -9477,9 +9477,9 @@ internalMixin(Vue);
 
 /***/ }),
 /* 26 */
-/*!*****************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/pages.json ***!
-  \*****************************************************************/
+/*!***************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/pages.json ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -9623,9 +9623,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 33 */
-/*!************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/index.js ***!
-  \************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/index.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9712,9 +9712,9 @@ exports.default = _default;
 
 /***/ }),
 /* 34 */
-/*!***********************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/mixin/mixin.js ***!
-  \***********************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/mixin/mixin.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9880,9 +9880,9 @@ exports.default = _default;
 
 /***/ }),
 /* 35 */
-/*!*************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/mixin/mpMixin.js ***!
-  \*************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/mixin/mpMixin.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9903,9 +9903,9 @@ exports.default = _default;
 
 /***/ }),
 /* 36 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/index.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/index.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9923,9 +9923,9 @@ exports.default = _default;
 
 /***/ }),
 /* 37 */
-/*!*************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/core/Request.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/core/Request.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10129,9 +10129,9 @@ exports.default = Request;
 
 /***/ }),
 /* 38 */
-/*!*********************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
-  \*********************************************************************************************************/
+/*!*******************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10151,9 +10151,9 @@ exports.default = _default;
 
 /***/ }),
 /* 39 */
-/*!***************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/adapters/index.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/adapters/index.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10232,9 +10232,9 @@ exports.default = _default;
 
 /***/ }),
 /* 40 */
-/*!*****************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/helpers/buildURL.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/helpers/buildURL.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10302,9 +10302,9 @@ function buildURL(url, params) {
 
 /***/ }),
 /* 41 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/utils.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/utils.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10455,9 +10455,9 @@ function isUndefined(val) {
 
 /***/ }),
 /* 42 */
-/*!*******************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/core/buildFullPath.js ***!
-  \*******************************************************************************************************/
+/*!*****************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/core/buildFullPath.js ***!
+  \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10489,9 +10489,9 @@ function buildFullPath(baseURL, requestedURL) {
 
 /***/ }),
 /* 43 */
-/*!**********************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
-  \**********************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10517,9 +10517,9 @@ function isAbsoluteURL(url) {
 
 /***/ }),
 /* 44 */
-/*!********************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
-  \********************************************************************************************************/
+/*!******************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10543,9 +10543,9 @@ function combineURLs(baseURL, relativeURL) {
 
 /***/ }),
 /* 45 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/core/settle.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/core/settle.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10575,9 +10575,9 @@ function settle(resolve, reject, response) {
 
 /***/ }),
 /* 46 */
-/*!************************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
-  \************************************************************************************************************/
+/*!**********************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10639,9 +10639,9 @@ exports.default = _default;
 
 /***/ }),
 /* 47 */
-/*!*****************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/core/mergeConfig.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/core/mergeConfig.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10715,9 +10715,9 @@ exports.default = _default;
 
 /***/ }),
 /* 48 */
-/*!**************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/core/defaults.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/core/defaults.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10747,9 +10747,9 @@ exports.default = _default;
 
 /***/ }),
 /* 49 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/luch-request/utils/clone.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/luch-request/utils/clone.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13071,9 +13071,9 @@ module.exports = Array.isArray || function (arr) {
 
 /***/ }),
 /* 54 */
-/*!**********************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/util/route.js ***!
-  \**********************************************************************************/
+/*!********************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/util/route.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13633,9 +13633,9 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 
 /***/ }),
 /* 58 */
-/*!**********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/function/colorGradient.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/function/colorGradient.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13788,9 +13788,9 @@ exports.default = _default;
 
 /***/ }),
 /* 59 */
-/*!*************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/function/test.js ***!
-  \*************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/function/test.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14093,9 +14093,9 @@ exports.default = _default;
 
 /***/ }),
 /* 60 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/function/debounce.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/function/debounce.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14140,9 +14140,9 @@ exports.default = _default;
 
 /***/ }),
 /* 61 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/function/throttle.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/function/throttle.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14189,9 +14189,9 @@ exports.default = _default;
 
 /***/ }),
 /* 62 */
-/*!**************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/function/index.js ***!
-  \**************************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/function/index.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14990,9 +14990,9 @@ exports.default = _default;
 
 /***/ }),
 /* 63 */
-/*!**************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/function/digit.js ***!
-  \**************************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/function/digit.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15209,9 +15209,9 @@ module.exports = _toArray, module.exports.__esModule = true, module.exports["def
 
 /***/ }),
 /* 65 */
-/*!*************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/config.js ***!
-  \*************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/config.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15253,9 +15253,9 @@ exports.default = _default;
 
 /***/ }),
 /* 66 */
-/*!************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props.js ***!
-  \************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15365,9 +15365,9 @@ exports.default = _default;
 
 /***/ }),
 /* 67 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/actionSheet.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/actionSheet.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15409,9 +15409,9 @@ exports.default = _default;
 
 /***/ }),
 /* 68 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/album.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/album.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15453,9 +15453,9 @@ exports.default = _default;
 
 /***/ }),
 /* 69 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/alert.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/alert.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15492,9 +15492,9 @@ exports.default = _default;
 
 /***/ }),
 /* 70 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/avatar.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/avatar.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15537,9 +15537,9 @@ exports.default = _default;
 
 /***/ }),
 /* 71 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/avatarGroup.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/avatarGroup.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15579,9 +15579,9 @@ exports.default = _default;
 
 /***/ }),
 /* 72 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/backtop.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/backtop.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15625,9 +15625,9 @@ exports.default = _default;
 
 /***/ }),
 /* 73 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/badge.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/badge.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15671,9 +15671,9 @@ exports.default = _default;
 
 /***/ }),
 /* 74 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/button.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/button.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15730,9 +15730,9 @@ exports.default = _default;
 
 /***/ }),
 /* 75 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/calendar.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/calendar.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15793,9 +15793,9 @@ exports.default = _default;
 
 /***/ }),
 /* 76 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/carKeyboard.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/carKeyboard.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15825,9 +15825,9 @@ exports.default = _default;
 
 /***/ }),
 /* 77 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/cell.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/cell.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15877,9 +15877,9 @@ exports.default = _default;
 
 /***/ }),
 /* 78 */
-/*!**********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/cellGroup.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/cellGroup.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15911,9 +15911,9 @@ exports.default = _default;
 
 /***/ }),
 /* 79 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/checkbox.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/checkbox.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15955,9 +15955,9 @@ exports.default = _default;
 
 /***/ }),
 /* 80 */
-/*!**************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/checkboxGroup.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/checkboxGroup.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16003,9 +16003,9 @@ exports.default = _default;
 
 /***/ }),
 /* 81 */
-/*!***************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/circleProgress.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/circleProgress.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16035,9 +16035,9 @@ exports.default = _default;
 
 /***/ }),
 /* 82 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/code.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/code.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16072,9 +16072,9 @@ exports.default = _default;
 
 /***/ }),
 /* 83 */
-/*!**********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/codeInput.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/codeInput.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16118,9 +16118,9 @@ exports.default = _default;
 
 /***/ }),
 /* 84 */
-/*!****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/col.js ***!
-  \****************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/col.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16154,9 +16154,9 @@ exports.default = _default;
 
 /***/ }),
 /* 85 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/collapse.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/collapse.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16188,9 +16188,9 @@ exports.default = _default;
 
 /***/ }),
 /* 86 */
-/*!*************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/collapseItem.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/collapseItem.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16230,9 +16230,9 @@ exports.default = _default;
 
 /***/ }),
 /* 87 */
-/*!*************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/columnNotice.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/columnNotice.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16271,9 +16271,9 @@ exports.default = _default;
 
 /***/ }),
 /* 88 */
-/*!**********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/countDown.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/countDown.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16306,9 +16306,9 @@ exports.default = _default;
 
 /***/ }),
 /* 89 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/countTo.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/countTo.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16348,9 +16348,9 @@ exports.default = _default;
 
 /***/ }),
 /* 90 */
-/*!***************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/datetimePicker.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/datetimePicker.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16403,9 +16403,9 @@ exports.default = _default;
 
 /***/ }),
 /* 91 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/divider.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/divider.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16442,9 +16442,9 @@ exports.default = _default;
 
 /***/ }),
 /* 92 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/empty.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/empty.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16484,9 +16484,9 @@ exports.default = _default;
 
 /***/ }),
 /* 93 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/form.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/form.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16529,9 +16529,9 @@ exports.default = _default;
 
 /***/ }),
 /* 94 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/formItem.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/formItem.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16569,9 +16569,9 @@ exports.default = _default;
 
 /***/ }),
 /* 95 */
-/*!****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/gap.js ***!
-  \****************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/gap.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16605,9 +16605,9 @@ exports.default = _default;
 
 /***/ }),
 /* 96 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/grid.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/grid.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16639,9 +16639,9 @@ exports.default = _default;
 
 /***/ }),
 /* 97 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/gridItem.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/gridItem.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16672,9 +16672,9 @@ exports.default = _default;
 
 /***/ }),
 /* 98 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/icon.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/icon.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16724,9 +16724,9 @@ exports.default = _default;
 
 /***/ }),
 /* 99 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/image.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/image.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16771,9 +16771,9 @@ exports.default = _default;
 
 /***/ }),
 /* 100 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/indexAnchor.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/indexAnchor.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16807,9 +16807,9 @@ exports.default = _default;
 
 /***/ }),
 /* 101 */
-/*!**********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/indexList.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/indexList.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16845,9 +16845,9 @@ exports.default = _default;
 
 /***/ }),
 /* 102 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/input.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/input.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16910,9 +16910,9 @@ exports.default = _default;
 
 /***/ }),
 /* 103 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/keyboard.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/keyboard.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16957,9 +16957,9 @@ exports.default = _default;
 
 /***/ }),
 /* 104 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/line.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/line.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16994,9 +16994,9 @@ exports.default = _default;
 
 /***/ }),
 /* 105 */
-/*!*************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/lineProgress.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/lineProgress.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17030,9 +17030,9 @@ exports.default = _default;
 
 /***/ }),
 /* 106 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/link.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/link.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17072,9 +17072,9 @@ exports.default = _default;
 
 /***/ }),
 /* 107 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/list.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/list.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17117,9 +17117,9 @@ exports.default = _default;
 
 /***/ }),
 /* 108 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/listItem.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/listItem.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17149,9 +17149,9 @@ exports.default = _default;
 
 /***/ }),
 /* 109 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/loadingIcon.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/loadingIcon.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17195,9 +17195,9 @@ exports.default = _default;
 
 /***/ }),
 /* 110 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/loadingPage.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/loadingPage.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17235,9 +17235,9 @@ exports.default = _default;
 
 /***/ }),
 /* 111 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/loadmore.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/loadmore.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17284,9 +17284,9 @@ exports.default = _default;
 
 /***/ }),
 /* 112 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/modal.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/modal.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17331,9 +17331,9 @@ exports.default = _default;
 
 /***/ }),
 /* 113 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/navbar.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/navbar.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17380,9 +17380,9 @@ exports.default = _default;
 
 /***/ }),
 /* 114 */
-/*!************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/color.js ***!
-  \************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/color.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17413,9 +17413,9 @@ exports.default = _default;
 
 /***/ }),
 /* 115 */
-/*!**********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/noNetwork.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/noNetwork.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17447,9 +17447,9 @@ exports.default = _default;
 
 /***/ }),
 /* 116 */
-/*!**********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/noticeBar.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/noticeBar.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17493,9 +17493,9 @@ exports.default = _default;
 
 /***/ }),
 /* 117 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/notify.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/notify.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17532,9 +17532,9 @@ exports.default = _default;
 
 /***/ }),
 /* 118 */
-/*!**********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/numberBox.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/numberBox.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17584,9 +17584,9 @@ exports.default = _default;
 
 /***/ }),
 /* 119 */
-/*!***************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/numberKeyboard.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/numberKeyboard.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17618,9 +17618,9 @@ exports.default = _default;
 
 /***/ }),
 /* 120 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/overlay.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/overlay.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17653,9 +17653,9 @@ exports.default = _default;
 
 /***/ }),
 /* 121 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/parse.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/parse.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17692,9 +17692,9 @@ exports.default = _default;
 
 /***/ }),
 /* 122 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/picker.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/picker.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17742,9 +17742,9 @@ exports.default = _default;
 
 /***/ }),
 /* 123 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/popup.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/popup.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17788,9 +17788,9 @@ exports.default = _default;
 
 /***/ }),
 /* 124 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/radio.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/radio.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17832,9 +17832,9 @@ exports.default = _default;
 
 /***/ }),
 /* 125 */
-/*!***********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/radioGroup.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/radioGroup.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17879,9 +17879,9 @@ exports.default = _default;
 
 /***/ }),
 /* 126 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/rate.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/rate.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17922,9 +17922,9 @@ exports.default = _default;
 
 /***/ }),
 /* 127 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/readMore.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/readMore.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17961,9 +17961,9 @@ exports.default = _default;
 
 /***/ }),
 /* 128 */
-/*!****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/row.js ***!
-  \****************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/row.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17995,9 +17995,9 @@ exports.default = _default;
 
 /***/ }),
 /* 129 */
-/*!**********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/rowNotice.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/rowNotice.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18033,9 +18033,9 @@ exports.default = _default;
 
 /***/ }),
 /* 130 */
-/*!***********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/scrollList.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/scrollList.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18070,9 +18070,9 @@ exports.default = _default;
 
 /***/ }),
 /* 131 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/search.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/search.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18128,9 +18128,9 @@ exports.default = _default;
 
 /***/ }),
 /* 132 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/section.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/section.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18169,9 +18169,9 @@ exports.default = _default;
 
 /***/ }),
 /* 133 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/skeleton.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/skeleton.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18211,9 +18211,9 @@ exports.default = _default;
 
 /***/ }),
 /* 134 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/slider.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/slider.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18253,9 +18253,9 @@ exports.default = _default;
 
 /***/ }),
 /* 135 */
-/*!**********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/statusBar.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/statusBar.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18285,9 +18285,9 @@ exports.default = _default;
 
 /***/ }),
 /* 136 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/steps.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/steps.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18323,9 +18323,9 @@ exports.default = _default;
 
 /***/ }),
 /* 137 */
-/*!**********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/stepsItem.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/stepsItem.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18358,9 +18358,9 @@ exports.default = _default;
 
 /***/ }),
 /* 138 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/sticky.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/sticky.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18395,9 +18395,9 @@ exports.default = _default;
 
 /***/ }),
 /* 139 */
-/*!***********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/subsection.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/subsection.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18435,9 +18435,9 @@ exports.default = _default;
 
 /***/ }),
 /* 140 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/swipeAction.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/swipeAction.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18467,9 +18467,9 @@ exports.default = _default;
 
 /***/ }),
 /* 141 */
-/*!****************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/swipeActionItem.js ***!
-  \****************************************************************************************************/
+/*!**************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/swipeActionItem.js ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18505,9 +18505,9 @@ exports.default = _default;
 
 /***/ }),
 /* 142 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/swiper.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/swiper.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18562,9 +18562,9 @@ exports.default = _default;
 
 /***/ }),
 /* 143 */
-/*!*****************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/swipterIndicator.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/swipterIndicator.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18598,9 +18598,9 @@ exports.default = _default;
 
 /***/ }),
 /* 144 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/switch.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/switch.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18639,9 +18639,9 @@ exports.default = _default;
 
 /***/ }),
 /* 145 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/tabbar.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/tabbar.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18678,9 +18678,9 @@ exports.default = _default;
 
 /***/ }),
 /* 146 */
-/*!***********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/tabbarItem.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/tabbarItem.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18715,9 +18715,9 @@ exports.default = _default;
 
 /***/ }),
 /* 147 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/tabs.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/tabs.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18772,9 +18772,9 @@ exports.default = _default;
 
 /***/ }),
 /* 148 */
-/*!****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/tag.js ***!
-  \****************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/tag.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18818,9 +18818,9 @@ exports.default = _default;
 
 /***/ }),
 /* 149 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/text.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/text.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18874,9 +18874,9 @@ exports.default = _default;
 
 /***/ }),
 /* 150 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/textarea.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/textarea.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18927,9 +18927,9 @@ exports.default = _default;
 
 /***/ }),
 /* 151 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/toast.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/toast.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18973,9 +18973,9 @@ exports.default = _default;
 
 /***/ }),
 /* 152 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/toolbar.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/toolbar.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19010,9 +19010,9 @@ exports.default = _default;
 
 /***/ }),
 /* 153 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/tooltip.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/tooltip.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19054,9 +19054,9 @@ exports.default = _default;
 
 /***/ }),
 /* 154 */
-/*!***********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/transition.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/transition.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19089,9 +19089,9 @@ exports.default = _default;
 
 /***/ }),
 /* 155 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/props/upload.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/props/upload.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19148,9 +19148,9 @@ exports.default = _default;
 
 /***/ }),
 /* 156 */
-/*!*************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/config/zIndex.js ***!
-  \*************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/config/zIndex.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19184,9 +19184,9 @@ exports.default = _default;
 
 /***/ }),
 /* 157 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/function/platform.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/function/platform.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19214,9 +19214,9 @@ exports.default = _default;
 
 /***/ }),
 /* 158 */
-/*!*********************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/store/index.js ***!
-  \*********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/store/index.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20502,9 +20502,9 @@ module.exports = index_cjs;
 
 /***/ }),
 /* 160 */
-/*!****************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/store/system/index.js ***!
-  \****************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/store/system/index.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20531,9 +20531,9 @@ exports.default = _default;
 
 /***/ }),
 /* 161 */
-/*!******************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/store/business/index.js ***!
-  \******************************************************************************/
+/*!****************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/store/business/index.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20607,9 +20607,9 @@ exports.default = _default;
 
 /***/ }),
 /* 162 */
-/*!****************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/api/business/index.js ***!
-  \****************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/api/business/index.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20638,16 +20638,11 @@ function GetDoctors(data) {
   return (0, _request.request)(_config.default.baseApi + "/doctors", "get", data);
 }
 
-// 查找单个swiper的内容
-// export function GetSwiperbyID(data){
-//     return request(config.baseApi+"/GetSwiperbyID","get",data)
-// }
-
 /***/ }),
 /* 163 */
-/*!***************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/utils/conf/config.js ***!
-  \***************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/utils/conf/config.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20666,9 +20661,9 @@ exports.default = _default;
 
 /***/ }),
 /* 164 */
-/*!*******************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/utils/request/request.js ***!
-  \*******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/utils/request/request.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20751,9 +20746,9 @@ function request(url) {
 
 /***/ }),
 /* 165 */
-/*!****************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/store/tabbar/index.js ***!
-  \****************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/store/tabbar/index.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20780,9 +20775,9 @@ exports.default = _default;
 
 /***/ }),
 /* 166 */
-/*!*******************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uni.promisify.adaptor.js ***!
-  \*******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uni.promisify.adaptor.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20817,9 +20812,9 @@ uni.addInterceptor({
 /* 179 */,
 /* 180 */,
 /* 181 */
-/*!************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/api/find/index.js ***!
-  \************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/api/find/index.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20857,9 +20852,9 @@ function GetAllNews(data) {
 
 /***/ }),
 /* 182 */
-/*!**************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/api/search/index.js ***!
-  \**************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/api/search/index.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20970,9 +20965,9 @@ function mhsearch(data) {
 /* 271 */,
 /* 272 */,
 /* 273 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-grid/props.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-grid/props.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21014,9 +21009,9 @@ exports.default = _default;
 /* 279 */,
 /* 280 */,
 /* 281 */
-/*!***********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-grid-item/props.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-grid-item/props.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21053,9 +21048,9 @@ exports.default = _default;
 /* 287 */,
 /* 288 */,
 /* 289 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-icon/icons.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-icon/icons.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21284,9 +21279,9 @@ exports.default = _default;
 
 /***/ }),
 /* 290 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-icon/props.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-icon/props.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21398,9 +21393,9 @@ exports.default = _default;
 /* 296 */,
 /* 297 */,
 /* 298 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-search/props.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-search/props.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21541,9 +21536,9 @@ exports.default = _default;
 /* 304 */,
 /* 305 */,
 /* 306 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-tabs/props.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-tabs/props.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21630,9 +21625,9 @@ exports.default = _default;
 /* 312 */,
 /* 313 */,
 /* 314 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-cell-group/props.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-cell-group/props.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21669,9 +21664,9 @@ exports.default = _default;
 /* 320 */,
 /* 321 */,
 /* 322 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-cell/props.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-cell/props.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21818,9 +21813,9 @@ exports.default = _default2;
 /* 342 */,
 /* 343 */,
 /* 344 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-form/props.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-form/props.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21881,9 +21876,9 @@ exports.default = _default;
 
 /***/ }),
 /* 345 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/util/async-validator.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/util/async-validator.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21918,7 +21913,7 @@ function _extends() {
 var formatRegExp = /%[sdj%]/g;
 var warning = function warning() {}; // don't print warning message when in production env or node runtime
 
-if (typeof process !== 'undefined' && Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}) && "development" !== 'production' && typeof window !== 'undefined' && typeof document !== 'undefined') {
+if (typeof process !== 'undefined' && Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"weChatApp","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}) && "development" !== 'production' && typeof window !== 'undefined' && typeof document !== 'undefined') {
   warning = function warning(type, errors) {
     if (typeof console !== 'undefined' && console.warn) {
       if (errors.every(function (e) {
@@ -23427,9 +23422,9 @@ var substr = 'ab'.substr(-1) === 'b'
 /* 351 */,
 /* 352 */,
 /* 353 */
-/*!***********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-form-item/props.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-form-item/props.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23500,9 +23495,9 @@ exports.default = _default;
 /* 359 */,
 /* 360 */,
 /* 361 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-input/props.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-input/props.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23712,9 +23707,9 @@ exports.default = _default;
 /* 367 */,
 /* 368 */,
 /* 369 */
-/*!*****************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-gap/props.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-gap/props.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23761,9 +23756,9 @@ exports.default = _default;
 /* 375 */,
 /* 376 */,
 /* 377 */
-/*!************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/mixin/button.js ***!
-  \************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/mixin/button.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23791,9 +23786,9 @@ exports.default = _default;
 
 /***/ }),
 /* 378 */
-/*!**************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/libs/mixin/openType.js ***!
-  \**************************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/libs/mixin/openType.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23833,9 +23828,9 @@ exports.default = _default;
 
 /***/ }),
 /* 379 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-button/props.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-button/props.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24029,9 +24024,9 @@ exports.default = _default;
 /* 395 */,
 /* 396 */,
 /* 397 */
-/*!**************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-action-sheet/props.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-action-sheet/props.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24108,9 +24103,9 @@ exports.default = _default;
 /* 403 */,
 /* 404 */,
 /* 405 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-tabbar/props.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-tabbar/props.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24177,9 +24172,9 @@ exports.default = _default;
 /* 411 */,
 /* 412 */,
 /* 413 */
-/*!*************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-tabbar-item/props.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-tabbar-item/props.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24236,9 +24231,9 @@ exports.default = _default;
 /* 419 */,
 /* 420 */,
 /* 421 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-badge/props.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-badge/props.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24333,9 +24328,9 @@ exports.default = _default;
 /* 427 */,
 /* 428 */,
 /* 429 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-line/props.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-line/props.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24391,9 +24386,9 @@ exports.default = _default;
 /* 435 */,
 /* 436 */,
 /* 437 */
-/*!********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-avatar/props.js ***!
-  \********************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-avatar/props.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24501,9 +24496,9 @@ exports.default = _default;
 /* 450 */,
 /* 451 */,
 /* 452 */
-/*!**************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-loading-icon/props.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-loading-icon/props.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24585,9 +24580,9 @@ exports.default = _default;
 /* 458 */,
 /* 459 */,
 /* 460 */
-/*!*******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-popup/props.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-popup/props.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24689,9 +24684,9 @@ exports.default = _default;
 /* 466 */,
 /* 467 */,
 /* 468 */
-/*!*************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-safe-bottom/props.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-safe-bottom/props.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24716,9 +24711,9 @@ exports.default = _default;
 /* 474 */,
 /* 475 */,
 /* 476 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-text/props.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-text/props.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24849,9 +24844,9 @@ exports.default = _default;
 /* 480 */,
 /* 481 */,
 /* 482 */
-/*!*********************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-overlay/props.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-overlay/props.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24898,9 +24893,9 @@ exports.default = _default;
 /* 488 */,
 /* 489 */,
 /* 490 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-transition/props.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-transition/props.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24940,9 +24935,9 @@ exports.default = _default;
 
 /***/ }),
 /* 491 */
-/*!*****************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-transition/transition.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-transition/transition.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25049,9 +25044,9 @@ exports.default = _default;
 
 /***/ }),
 /* 492 */
-/*!*******************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-transition/nvue.ani-map.js ***!
-  \*******************************************************************************************************/
+/*!*****************************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-transition/nvue.ani-map.js ***!
+  \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25249,9 +25244,9 @@ exports.default = _default;
 /* 498 */,
 /* 499 */,
 /* 500 */
-/*!************************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-status-bar/props.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-status-bar/props.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25282,9 +25277,9 @@ exports.default = _default;
 /* 506 */,
 /* 507 */,
 /* 508 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-text/value.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-text/value.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25397,9 +25392,9 @@ exports.default = _default;
 /* 514 */,
 /* 515 */,
 /* 516 */
-/*!******************************************************************************************!*\
-  !*** D:/Apps/HBuilderX/HBuilderProjects/weChatApp01/uview-ui/components/u-link/props.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/Apps/HBuilderX/HBuilderProjects/chenxiApp/uview-ui/components/u-link/props.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

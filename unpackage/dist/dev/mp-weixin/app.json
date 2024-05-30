@@ -35,13 +35,22 @@
     "selectedColor": "#3c9cff",
     "list": [
       {
-        "pagePath": "pages/index/index"
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/index.png",
+        "selectedIconPath": "static/icon/indexA.png"
       },
       {
-        "pagePath": "pages/find/index"
+        "text": "发现",
+        "pagePath": "pages/find/index",
+        "iconPath": "static/icon/find.png",
+        "selectedIconPath": "static/icon/findA.png"
       },
       {
-        "pagePath": "pages/my/index"
+        "text": "我的",
+        "pagePath": "pages/my/index",
+        "iconPath": "static/icon/my.png",
+        "selectedIconPath": "static/icon/myA.png"
       }
     ]
   },

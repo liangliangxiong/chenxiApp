@@ -1,12 +1,5 @@
 <template>
 	<view>
-		<!-- 搜索框 -->
-		<!-- 		<view class="search-box">
-			<view style="width: 90%;">
-				<search></search>
-			</view>
-		</view> -->
-
 		<view class="content">
 			<!-- 轮播图 -->
 			<view class="swiper-container">
@@ -60,9 +53,7 @@
 			</view>
 		</view>
 		<!-- tabbar -->
-		<tab-bar></tab-bar>
-		<!-- 为了适配页面高度的view -->
-		<buttonbox></buttonbox>
+		<!-- <tab-bar></tab-bar> -->
 	</view>
 </template>
 

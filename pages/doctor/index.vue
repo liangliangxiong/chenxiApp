@@ -3,7 +3,7 @@
 		医生
 
 		<!-- tabbar -->
-		<tab-bar></tab-bar>
+		<!-- <tab-bar></tab-bar> -->
 	</view>
 </template>
 
