@@ -32,9 +32,9 @@
 			}
 		},
 		{
-			"path": "pages/doctor/index",
+			"path": "pages/course/index",
 			"style": {
-				"navigationBarTitleText": "医生列表",
+				"navigationBarTitleText": "课程",
 				"enablePullDownRefresh": false
 			}
 		}
@@ -105,6 +105,12 @@
 		"pagePath": "pages/index/index",
 		"iconPath": "static/icon/index.png",
 		"selectedIconPath": "static/icon/indexA.png"
+	},
+	{
+		"text": "课程",
+		"pagePath": "pages/course/index",
+		"iconPath": "static/icon/course.png",
+		"selectedIconPath": "static/icon/courseA.png"
 	},
 	{
 		"text": "发现",

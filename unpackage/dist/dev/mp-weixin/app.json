@@ -4,7 +4,7 @@
     "pages/find/index",
     "pages/my/index",
     "pages/login/login",
-    "pages/doctor/index"
+    "pages/course/index"
   ],
   "subPackages": [
     {
@@ -41,6 +41,12 @@
         "selectedIconPath": "static/icon/indexA.png"
       },
       {
+        "text": "课程",
+        "pagePath": "pages/course/index",
+        "iconPath": "static/icon/course.png",
+        "selectedIconPath": "static/icon/courseA.png"
+      },
+      {
         "text": "发现",
         "pagePath": "pages/find/index",
         "iconPath": "static/icon/find.png",
@@ -67,5 +73,6 @@
     "tab-bar": "/components/tabbar/tabbar",
     "search": "/components/search/search",
     "buttonbox": "/components/buttonbox/buttonbox"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
