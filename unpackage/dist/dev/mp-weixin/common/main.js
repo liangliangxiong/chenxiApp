@@ -24,17 +24,17 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
 var tabBar = function tabBar() {
   __webpack_require__.e(/*! require.ensure | components/tabbar/tabbar */ "components/tabbar/tabbar").then((function () {
-    return resolve(__webpack_require__(/*! @/components/tabbar/tabbar.vue */ 244));
+    return resolve(__webpack_require__(/*! @/components/tabbar/tabbar.vue */ 253));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var Search = function Search() {
   __webpack_require__.e(/*! require.ensure | components/search/search */ "components/search/search").then((function () {
-    return resolve(__webpack_require__(/*! @/components/search/search.vue */ 249));
+    return resolve(__webpack_require__(/*! @/components/search/search.vue */ 258));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var Buttonbox = function Buttonbox() {
   __webpack_require__.e(/*! require.ensure | components/buttonbox/buttonbox */ "components/buttonbox/buttonbox").then((function () {
-    return resolve(__webpack_require__(/*! @/components/buttonbox/buttonbox.vue */ 256));
+    return resolve(__webpack_require__(/*! @/components/buttonbox/buttonbox.vue */ 265));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 _vue.default.component('tab-bar', tabBar); //使用tabBar组件

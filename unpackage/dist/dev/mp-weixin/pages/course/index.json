@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "课程",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "u-link": "/uview-ui/components/u-link/u-link"
+  }
 }
