@@ -1,6 +1,6 @@
 <template>
 	<view>
-		医生
+		课程
 
 		<!-- tabbar -->
 		<!-- <tab-bar></tab-bar> -->

@@ -3,7 +3,6 @@
     "pages/index/index",
     "pages/find/index",
     "pages/my/index",
-    "pages/login/login",
     "pages/course/index"
   ],
   "subPackages": [
@@ -11,6 +10,7 @@
       "root": "pages-mine",
       "pages": [
         "personal-center/personal-center",
+        "login/login",
         "set/set"
       ]
     },
@@ -73,6 +73,5 @@
     "tab-bar": "/components/tabbar/tabbar",
     "search": "/components/search/search",
     "buttonbox": "/components/buttonbox/buttonbox"
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }

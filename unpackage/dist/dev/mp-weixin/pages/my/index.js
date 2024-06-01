@@ -101,10 +101,10 @@ var components
 try {
   components = {
     uCellGroup: function () {
-      return Promise.all(/*! import() | uview-ui/components/u-cell-group/u-cell-group */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-cell-group/u-cell-group")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-cell-group/u-cell-group.vue */ 309))
+      return Promise.all(/*! import() | uview-ui/components/u-cell-group/u-cell-group */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-cell-group/u-cell-group")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-cell-group/u-cell-group.vue */ 302))
     },
     uCell: function () {
-      return Promise.all(/*! import() | uview-ui/components/u-cell/u-cell */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-cell/u-cell")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-cell/u-cell.vue */ 317))
+      return Promise.all(/*! import() | uview-ui/components/u-cell/u-cell */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-cell/u-cell")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-cell/u-cell.vue */ 310))
     },
   }
 } catch (e) {
@@ -169,12 +169,12 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var UserInfo = function UserInfo() {
   __webpack_require__.e(/*! require.ensure | pages/my/components/UserInfo */ "pages/my/components/UserInfo").then((function () {
-    return resolve(__webpack_require__(/*! ./components/UserInfo.vue */ 325));
+    return resolve(__webpack_require__(/*! ./components/UserInfo.vue */ 318));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var Grid = function Grid() {
   __webpack_require__.e(/*! require.ensure | pages/my/components/Grid */ "pages/my/components/Grid").then((function () {
-    return resolve(__webpack_require__(/*! ./components/Grid.vue */ 332));
+    return resolve(__webpack_require__(/*! ./components/Grid.vue */ 325));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {

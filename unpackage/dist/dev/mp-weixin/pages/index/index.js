@@ -101,13 +101,13 @@ var components
 try {
   components = {
     uGrid: function () {
-      return Promise.all(/*! import() | uview-ui/components/u-grid/u-grid */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-grid/u-grid")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-grid/u-grid.vue */ 268))
+      return Promise.all(/*! import() | uview-ui/components/u-grid/u-grid */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-grid/u-grid")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-grid/u-grid.vue */ 261))
     },
     uGridItem: function () {
-      return Promise.all(/*! import() | uview-ui/components/u-grid-item/u-grid-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-grid-item/u-grid-item")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-grid-item/u-grid-item.vue */ 276))
+      return Promise.all(/*! import() | uview-ui/components/u-grid-item/u-grid-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-grid-item/u-grid-item")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-grid-item/u-grid-item.vue */ 269))
     },
     uIcon: function () {
-      return Promise.all(/*! import() | uview-ui/components/u-icon/u-icon */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-icon/u-icon")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-icon/u-icon.vue */ 284))
+      return Promise.all(/*! import() | uview-ui/components/u-icon/u-icon */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-icon/u-icon")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-icon/u-icon.vue */ 277))
     },
   }
 } catch (e) {

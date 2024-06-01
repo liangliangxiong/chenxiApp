@@ -24,13 +24,7 @@
 				"enablePullDownRefresh": false
 			}
 		},
-		{
-			"path": "pages/login/login",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-		},
+
 		{
 			"path": "pages/course/index",
 			"style": {
@@ -45,6 +39,13 @@
 					"path": "personal-center/personal-center",
 					"style": {
 						"navigationBarTitleText": "个人中心",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "login/login",
+					"style": {
+						"navigationBarTitleText": "",
 						"enablePullDownRefresh": false
 					}
 				},

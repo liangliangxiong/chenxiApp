@@ -35,7 +35,7 @@
 		methods: {
 			toLogin() {
 				uni.navigateTo({
-					url: "/pages/login/login"
+					url: "/pages-mine/login/login"
 				})
 			},
 			toUserInfo() {
