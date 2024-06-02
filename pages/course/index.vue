@@ -3,8 +3,8 @@
 		<view class="header">
 			<view class="header-left">
 				<view class="title">课程</view>
-				<view class="subtitle">无论你是想上手使用新 Apple 产品，还是要进一步提升技能，都可以找到适合你的课程。</view>
-				<u-link href="https://www.apple.com.cn/wuhan/" text="晨曦" class="link"></u-link>
+				<view class="subtitle">无论你是想学习新知识，还是要进一步提升技能，都可以找到适合你的课程。</view>
+				<u-link href="https://www.apple.com.cn" text="晨曦课程" class="link"></u-link>
 			</view>
 			<view class="header-right">
 				<image src="../../static/01.gif" class="avatar"></image>
